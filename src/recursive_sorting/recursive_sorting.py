@@ -40,7 +40,7 @@ def merge_sort(arr):
 # implement an in-place merge sort algorithm
 def merge_in_place(arr, start, mid, end):
     # Your code here
-    start2 = mid + 1; 
+    start2 = mid + 1
   
     if (arr[mid] <= arr[start2]): 
         return; 
@@ -51,17 +51,17 @@ def merge_in_place(arr, start, mid, end):
             start += 1; 
         else: 
             value = arr[start2]; 
-            index = start2; 
+            index = start2 
 
             while (index != start): 
-                arr[index] = arr[index - 1]; 
-                index -= 1; 
+                arr[index] = arr[index - 1]
+                index -= 1
               
             arr[start] = value; 
   
-            start += 1; 
-            mid += 1; 
-            start2 += 1; 
+            start += 1 
+            mid += 1
+            start2 += 1
 
     return arr
 
@@ -70,12 +70,12 @@ def merge_sort_in_place(arr, l, r):
     # Your code here
     if (l < r): 
   
-        m = l + (r - l) // 2; 
+        m = l + (r - l) // 2
   
-        merge_sort_in_place(arr, l, m); 
-        merge_sort_in_place(arr, m + 1, r); 
+        merge_sort_in_place(arr, l, m)
+        merge_sort_in_place(arr, m + 1, r) 
   
-        merge_in_place(arr, l, m, r); 
+        merge_in_place(arr, l, m, r) 
 
     return arr
 
