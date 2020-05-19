@@ -43,7 +43,7 @@ def merge_in_place(arr, start, mid, end):
     start2 = mid + 1
   
     if (arr[mid] <= arr[start2]): 
-        return; 
+        return 
 
     while (start <= mid and start2 <= end): 
   
